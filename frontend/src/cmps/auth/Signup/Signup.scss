@@ -1,0 +1,19 @@
+@import '../../../assets/scss/setup/variables';
+
+.signup {
+  form > *:not(.bar) {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+  }
+  .bar {
+    > *:not(:last-child) {
+      margin-inline-end: 1rem;
+    }
+    > p {
+      font-size: 0.8rem;
+      > a {
+        color: $primary;
+      }
+    }
+  }
+}

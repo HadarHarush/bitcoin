@@ -1,0 +1,10 @@
+.input-box {
+  > label {
+    margin-inline-end: 1rem;
+    font-weight: bold;
+  }
+  > input {
+    padding: 0.5rem;
+    outline: unset;
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../assets/scss/setup/variables';
+
+.home-page {
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+    > *.card {
+      display: flex !important;
+      min-height: 200px;
+
+      .content > img {
+        min-width: 48px;
+      }
+      > * {
+        > *:first-child {
+          margin-inline-end: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $break-normal) {
+  .home-page {
+    .feature-grid {
+      display: flex;
+      flex-direction: column;
+      grid-gap: unset;
+      > *:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      > *.card {
+        display: flex !important;
+        min-height: 200px;
+        > * {
+          > *:first-child {
+            margin-inline-end: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

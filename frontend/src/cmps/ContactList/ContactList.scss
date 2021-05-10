@@ -1,0 +1,7 @@
+.contact-list {
+  max-height: 60vh;
+  overflow-y: auto;
+  > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

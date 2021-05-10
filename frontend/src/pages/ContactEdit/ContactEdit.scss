@@ -1,0 +1,11 @@
+.contact-edit {
+  > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+.select-item {
+  width: 100%;
+  > *:not(:last-child) {
+    margin-inline-end: 1rem;
+  }
+}

@@ -1,0 +1,11 @@
+.contact-preview {
+  padding: 15px 50px;
+  border-radius: 100px;
+  background-color: #ecf0f1;
+  cursor: pointer;
+  //   background-color: $grey;
+  width: 350px;
+  > *:not(:first-child) {
+    margin-inline-start: 1rem;
+  }
+}

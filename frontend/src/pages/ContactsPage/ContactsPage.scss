@@ -1,0 +1,37 @@
+@import '../../assets/scss/setup/variables';
+
+.contacts-page {
+  .page-content,
+  .page {
+    display: flex !important;
+  }
+  .page {
+    text-align: center;
+  }
+  .contacts-list-container {
+    > *:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+  .add-contact-button {
+    background-color: $success !important;
+    &:hover {
+      background-color: $success !important;
+    }
+  }
+}
+
+@media (max-width: $break-narrow) {
+  .contacts-page {
+    .page-content {
+      align-items: center;
+      flex-direction: column;
+      > *:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      .contact-preview {
+        width: unset;
+      }
+    }
+  }
+}

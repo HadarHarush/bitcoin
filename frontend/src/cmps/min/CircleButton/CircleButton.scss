@@ -1,0 +1,18 @@
+@import '../../../assets/scss/setup/variables';
+
+.circle-button {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  &.active {
+    background-color: $grey;
+  }
+  &:hover {
+    background-color: $grey;
+    transition: background-color 0.2s;
+  }
+}
